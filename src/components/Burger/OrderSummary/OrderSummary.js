@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Aux from "../../../hoc/Aux";
+import Aux from "../../../hoc/Aux/Aux";
 import Btn from "../../UI/Btn/Btn";
 
 class OrderSummary extends React.Component {

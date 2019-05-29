@@ -1,8 +1,9 @@
 import React from 'react';
 
 import styles from './Modal.module.css'
-import Aux from "../../../hoc/Aux";
+import Aux from "../../../hoc/Aux/Aux";
 import Backdrop from "../Backdrop/Backdrop";
+import PropTypes from "prop-types";
 
 class Modal extends React.Component {
 
@@ -29,6 +30,14 @@ class Modal extends React.Component {
     );
   };
 }
+Modal.propTypes = {
+  show: PropTypes.bool,
+  modalClosed: PropTypes.func,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
+};
 
 
 export default Modal;

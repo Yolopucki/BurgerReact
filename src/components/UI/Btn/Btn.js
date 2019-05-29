@@ -2,11 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Btn.module.css';
 
-const Btn = props => <button
-  onClick={props.clicked}
-  className={[styles.Button, styles[props.btnType]].join((' '))}>{props.children}</button>;
+const Btn = ({clicked, btnType, children}) => <button
+  onClick={clicked}
+  className={[styles.Button, styles[btnType]].join((' '))}>{children}</button>;
+
 Btn.propTypes = {
   clicked: PropTypes.func,
-  btnType: PropTypes.string.isRequired
+  btnType: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
 };
 export default Btn;
