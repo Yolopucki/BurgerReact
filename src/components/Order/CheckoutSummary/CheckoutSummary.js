@@ -2,7 +2,7 @@ import React from 'react';
 import Burger from '../../Burger/Burger';
 import Btn from '../../UI/Btn/Btn';
 
-import classes from './CheckoutSummary.css';
+import classes from './CheckoutSummary.module.css';
 
 const CheckoutSummary = props => {
     const {checkoutCancelled, checkoutContinue} = props;

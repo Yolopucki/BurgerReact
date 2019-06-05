@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Btn.module.css';
 
-const Btn = ({clicked, btnType, children}) => <button
+const Btn = ({clicked, btnType, children, disabled}) => <button disabled={disabled}
   onClick={clicked}
   className={[styles.Button, styles[btnType]].join((' '))}>{children}</button>;
 
