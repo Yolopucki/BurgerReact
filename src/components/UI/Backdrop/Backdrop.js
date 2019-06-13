@@ -8,8 +8,5 @@ Backdrop.propTypes = {
   clicked: PropTypes.func,
   show: PropTypes.bool
 };
-Backdrop.propTypes = {
-  show: PropTypes.bool,
-  clicked: PropTypes.func
-};
+
 export default Backdrop;
