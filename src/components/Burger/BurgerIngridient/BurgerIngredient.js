@@ -7,26 +7,28 @@ import styles from './BurgerIngredient.module.css';
 const BurgerIngredient = (props) => {
   let ingridient = null;
   switch (props.type) {
-    case('bread-bottom'):
-      ingridient = <div className={styles.BreadBottom}></div>
+    case ('bread-bottom'):
+      ingridient = <div className={styles.BreadBottom} />;
       break;
     case ('bread-top'):
-      ingridient = <div className={styles.BreadTop}>
-        <div className={styles.Seeds1}></div>
-        <div className={styles.Seeds2}></div>
-      </div>;
+      ingridient = (
+        <div className={styles.BreadTop}>
+          <div className={styles.Seeds1} />
+          <div className={styles.Seeds2} />
+        </div>
+      );
       break;
     case ('meat'):
-      ingridient = <div className={styles.Meat}></div>;
+      ingridient = <div className={styles.Meat} />;
       break;
     case ('cheese'):
-      ingridient = <div className={styles.Cheese}></div>;
+      ingridient = <div className={styles.Cheese} />;
       break;
     case ('bacon'):
-      ingridient = <div className={styles.Bacon}></div>;
+      ingridient = <div className={styles.Bacon} />;
       break;
     case ('salad'):
-      ingridient = <div className={styles.Salad}></div>;
+      ingridient = <div className={styles.Salad} />;
       break;
     default:
       ingridient = null;
@@ -35,6 +37,6 @@ const BurgerIngredient = (props) => {
   return ingridient;
 };
 BurgerIngredient.propTypes = {
-  type : PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 export default BurgerIngredient;
