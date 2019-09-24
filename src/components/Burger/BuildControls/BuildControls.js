@@ -32,7 +32,7 @@ const BuildControls = ({
 			{ price.toFixed(2) }
 			$
 		</p>
-		{ controls.map((ingredient) => (
+		{ controls.map(ingredient => (
 			<BuildControl
 				key={ ingredient.label }
 				label={ ingredient.label }

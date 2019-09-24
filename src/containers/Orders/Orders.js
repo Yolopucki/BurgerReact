@@ -30,7 +30,7 @@ class Orders extends Component {
 		const { orders } = this.state;
 		return (
 			<div style={ { marginTop: "100px" } }>
-				{ orders && orders.map((order) => (
+				{ orders && orders.map(order => (
 					<Order key={ order.id } ingredients={ order.ingredients } price={ +order.price } />
 				)) }
 			</div>

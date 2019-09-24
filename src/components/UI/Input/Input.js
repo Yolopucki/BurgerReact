@@ -21,7 +21,7 @@ const Input = ({
 		case "select":
 			inputElement = (
 				<select className={ inputClasses.join(" ") } value={ value } onChange={ changed }>
-					{elementConfig.options.map((option) => (
+					{elementConfig.options.map(option => (
 						<option key={ option.value } value={ option.value }>{option.displayValue}</option>
 					))}
 				</select>

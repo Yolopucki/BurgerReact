@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Order.module.css";
 
-const Order = (props) => {
+const Order = props => {
 	const { ingredients, price } = props;
 
 	const ingredientsArray = [];
@@ -17,7 +17,7 @@ const Order = (props) => {
 		display: "inline-block",
 		margin: "0 8px",
 	};
-	const ingredientOutput = ingredientsArray.map((ig) => (
+	const ingredientOutput = ingredientsArray.map(ig => (
 		<span key={ ig.name } style={ styles }>
 			{ ig.name }
 			{ " " }

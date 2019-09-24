@@ -104,7 +104,7 @@ class ContactData extends Component {
 		loading: false,
 	};
 
-	orderHandler = (e) => {
+	orderHandler = e => {
 		const { orderForm } = this.state;
 		const { ingredients, price, history } = this.props;
 		e.preventDefault();
@@ -178,13 +178,13 @@ class ContactData extends Component {
 		}
 		let form = (
 			<form onSubmit={ this.orderHandler }>
-				{ formElementArray.map((formElement) => (
+				{ formElementArray.map(formElement => (
 					<Input
 						elementType={ formElement.config.elementType }
 						elementConfig={ formElement.config.elementConfig }
 						value={ formElement.config.value }
 						key={ formElement.id }
-						changed={ (event) => this.inputChangedHandler(event, formElement.id) }
+						changed={ event => this.inputChangedHandler(event, formElement.id) }
 						invalid={ !formElement.config.valid }
 						// if no validation in config then false will be sent
 						shouldValidate={ formElement.config.validation }

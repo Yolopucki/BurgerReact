@@ -40,6 +40,7 @@ module.exports = {
     "no-unused-vars":0,
     "guard-for-in": 0,
     "no-shadow": 0,
+    "arrow-parens": 0,
     "no-restricted-syntax": 0,
     "indent": ["error", "tab",{ "SwitchCase": 1}],
     "react/jsx-indent": [2, "tab"],
