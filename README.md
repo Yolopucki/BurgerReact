@@ -1,5 +1,5 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d21ec0767b324b07bdb5fd8a49c62afe)](https://www.codacy.com/manual/victororlyk/shopAngular?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=victororlyk/shopAngular&amp;utm_campaign=Badge_Grade)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1219809786fb464c933d8ae6cdce93f5)](https://www.codacy.com/manual/victororlyk/BurgerReact?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=victororlyk/BurgerReact&amp;utm_campaign=Badge_Grade)
 
 
 ## Available Scripts
