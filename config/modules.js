@@ -4,6 +4,11 @@ const path = require("path");
 const chalk = require("react-dev-utils/chalk");
 const paths = require("./paths");
 
+// eslint-disable-next-line import/no-dynamic-require
+const TSConfig = require(paths.appTsConfig);
+const JSConfig = require(paths.appJsConfig);
+
+
 /**
  * Get the baseUrl of a compilerOptions object.
  *
@@ -62,11 +67,11 @@ function getModules() {
 	// TypeScript project and set up the config
 	// based on tsconfig.json
 	if (hasTsConfig) {
-		config = require(paths.appTsConfig);
+		config = TSConfig;
 		// Otherwise we'll check if there is jsconfig.json
 		// for non TS projects.
 	} else if (hasJsConfig) {
-		config = require(paths.appJsConfig);
+		config = JSConfig;
 	}
 
 	config = config || {};
